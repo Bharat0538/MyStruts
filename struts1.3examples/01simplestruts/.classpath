@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_05"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/jboss-4.2.3.GA/server/default/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/jboss-4.2.3.GA/server/default/lib/jsp-api.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/struts1.3library"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/antlr-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/bsf-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/commons-chain-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/commons-fileupload-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/commons-io-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/commons-validator-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/jstl-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/standard-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/struts-core-1.3.10.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/struts-el-1.3.10.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/struts-extras-1.3.10.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/struts-faces-1.3.10.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/struts-mailreader-dao-1.3.10.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/struts-scripting-1.3.10.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/struts-taglib-1.3.10.jar"/>
+	<classpathentry kind="lib" path="C:/Jar/Struts/Struts_1.3/jar/struts-tiles-1.3.10.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

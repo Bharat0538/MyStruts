@@ -1,0 +1,14 @@
+what,kind,bundleId,bundleVersion,description,time
+stopped,bundle,org.eclipse.datatools.enablement.jdt.classpath,1.0.1.v200901170137,org.eclipse.datatools.enablement.jdt.classpath,1259156327218
+stopped,bundle,org.eclipse.jdt.apt.ui,3.3.100.v20080407-1345,org.eclipse.jdt.apt.ui,1259156327312
+stopped,bundle,org.eclipse.jem.ui,2.0.100.v200806051600,org.eclipse.jem.ui,1259156327312
+stopped,bundle,org.eclipse.jst.server.preview.adapter,1.0.101.v20080730,org.eclipse.jst.server.preview.adapter,1259156327343
+stopped,bundle,org.hibernate.eclipse.jdt.apt.ui,3.2.4.GA-R200905070146-H18,org.hibernate.eclipse.jdt.apt.ui,1259156327343
+stopped,bundle,org.hibernate.eclipse.jdt.ui,3.2.4.GA-R200905070146-H18,org.hibernate.eclipse.jdt.ui,1259156327343
+stopped,bundle,org.hibernate.eclipse.mapper,3.2.4.GA-R200905070146-H18,org.hibernate.eclipse.mapper,1259156327343
+stopped,bundle,org.jboss.tools.hibernate.jpt.ui,3.2.4.GA-R200905070146-H18,org.jboss.tools.hibernate.jpt.ui,1259156327406
+stopped,bundle,org.jboss.tools.hibernate.ui.veditor,3.2.4.GA-R200905070146-H18,org.jboss.tools.hibernate.ui.veditor,1259156327453
+stopped,bundle,org.jboss.tools.hibernate.ui.view,3.2.4.GA-R200905070146-H18,org.jboss.tools.hibernate.ui.view,1259156327546
+stopped,bundle,org.hibernate.eclipse.console,3.2.4.GA-R200905070146-H18,org.hibernate.eclipse.console,1259156327546
+stopped,bundle,com.bea.weblogic.eclipse,1.1.1,com.bea.weblogic.eclipse,1259156327578
+stopped,bundle,org.eclipse.jdt.debug.ui,3.3.1.v20080730_r341,org.eclipse.jdt.debug.ui,1259156327578
