@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head></h:head>
+<h:body style="background-color:yellow">
+	<h:form>
+		<center>
+			<h1>
+				<h:outputText value="#{msg.GREET}" />
+			</h1>
+			<h3>
+				<h:outputText value="#{msg.WELCOME}" />
+			</h3>
+
+			<h:panelGrid columns="2">
+				
+				Language : 
+<h:selectOneMenu  onchange="submit()" valueChangeListener="#{helloBean.changeCountryLocale}">
+	<f:selectItems value="#{helloBean.countries}" />
+</h:selectOneMenu>
+
+	<h:commandButton action="#{helloBean.fun}" value="submit"></h:commandButton>
+</h:panelGrid>
+		</center>
+	</h:form>
+</h:body>
+</html>

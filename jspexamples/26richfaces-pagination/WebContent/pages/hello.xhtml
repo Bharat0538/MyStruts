@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j">
+
+
+<h:head></h:head>
+<h:body>
+<center>
+	<h1>Student Informations</h1>
+
+	<h:form>
+		<h:panelGroup>
+			<a4j:outputPanel>
+				<rich:dataScroller for="studentInfoTbl" stepControls="show"
+					fastControls="hide" boundaryControls="show" maxPages="5">
+					<f:facet name="first" />
+					<f:facet name="last" />
+					<f:facet name="previous" />
+					<f:facet name="next" />
+				</rich:dataScroller>
+			</a4j:outputPanel>
+		</h:panelGroup>
+
+		<a4j:outputPanel id="StudentList">
+
+			<rich:dataTable id="studentInfoTbl" rows="4"
+				rendered="#{ not empty testBean.studentList}"
+				value="#{testBean.studentList}" var="student">
+				<tr>
+					<f:facet name="header">
+						<rich:columnGroup>
+							<rich:column style="width:40%;">Student Name</rich:column>
+							<rich:column style="width:30%;">Course</rich:column>
+							<rich:column style="width:30%;">Batch</rich:column>
+						</rich:columnGroup>
+					</f:facet>
+
+					<rich:column>
+						<h:outputText value="#{student.name}" />
+					</rich:column>
+
+					<rich:column>
+						<h:outputText value="#{student.course}" />
+					</rich:column>
+
+					<rich:column>
+						<h:outputText value="#{student.batch}" />
+					</rich:column>
+				</tr>
+			</rich:dataTable>
+
+		</a4j:outputPanel>
+	</h:form>
+</center>
+</h:body>
+
+</html>

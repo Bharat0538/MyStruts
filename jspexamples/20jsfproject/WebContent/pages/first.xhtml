@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head></h:head>
+<h:body style="background-color:yellow">
+<h:form>
+	<h1>Please enter your details</h1>
+	<h:panelGrid columns="3">
+
+		<h:outputText value="Enter your ID" />
+		<h:inputText id="uid" value="#{helloBean.userId}"
+			validatorMessage="USERID SHOULD BE BETWEEN 100 AND 1000"
+			converterMessage="PLEASE ENTER INTEGER VALUE">
+			<f:validateLongRange minimum="100" maximum="1000" />
+		</h:inputText>
+		<h:message for="uid" style="color:red" />
+
+		<h:outputText value="Enter your name" />
+		<h:inputText id="nme" value="#{helloBean.name}" required="true"
+			requiredMessage="PLEASE ENTER USERNAME"
+			validatorMessage="USERNAME LENGTH SHOULD BE BETWEEN 3 AND 20">
+			<f:validateLength minimum="3" maximum="20" />
+		</h:inputText>
+		<h:message for="nme" style="color:red" />
+
+
+		<h:outputText value="Enter your password" />
+		<h:inputSecret id="pwd" value="#{helloBean.password}" required="true"
+			requiredMessage="PLEASE ENTER PASSWORD"
+			validatorMessage="PASSWORD LENGTH SHOULD BE BETWEEN 4 AND 10 CHARACTERS">
+			<f:validateLength minimum="4" maximum="10" />
+		</h:inputSecret>
+		<h:message for="pwd" style="color:red" />
+
+		<h:outputText value="Enter your DOB (dd-mm-yyyy)" />
+		<h:inputText id="db" value="#{helloBean.dob}" required="true"
+			requiredMessage="DATE IS REQUIRED"
+			converterMessage="PLEASE ENTER DATE IN DD-MM-YYYY FORMAT ONLY">
+			<f:convertDateTime pattern="dd-MM-yyyy" />
+		</h:inputText>
+		<h:message for="db" style="color:red" />
+
+		<h:outputText value="Enter your mail id" />
+		<h:inputText id="em" value="#{helloBean.email}" required="true"
+			requiredMessage="PLEASE ENTER EMAIL"
+			validatorMessage="ENTER EMAIL IN THE FORMAT aaa@gmail.com">
+			<f:validateRegex
+				pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+		</h:inputText>
+		<h:message for="em" style="color:red" />
+
+
+		<h:outputText value="Enter your mobile" />
+		<h:inputText id="ph" value="#{helloBean.phone}" required="true"
+			requiredMessage="PLEASE ENTER PHONE NUMBER"
+			validatorMessage="NOT VALID TYPE 10 DIGIT ONLY" >
+			<f:validateRegex pattern="\d{10}" />
+		</h:inputText>
+		<h:message for="ph" style="color:red" />
+
+
+		<h:outputText value="Enter your salary" />
+		<h:inputText id="sal" value="#{helloBean.salary}"
+			validatorMessage="SALARY IS NOT IN RANGE 20000.00-100000.00"
+			converterMessage="PLEASE ENTER DOUBLE VALUE">
+			<f:validateDoubleRange minimum="20000.00" maximum="100000.00" />
+		</h:inputText>
+		<h:message for="sal" style="color:red" />
+
+		<h:outputText value="Remember Me" />
+		<h:selectBooleanCheckbox id="rm" value="#{helloBean.rememberMe}" />
+		<h:message for="rm" style="color:red" />
+
+		<h:outputText value="Choose Technologies you know" />
+		<h:selectManyCheckbox id="tech" value="#{helloBean.technologies}">
+			<f:selectItems value="#{helloBean.technologyDisplay}" />
+		</h:selectManyCheckbox>
+		<h:message for="tech" style="color:red" />
+
+		<h:outputText value="Choose Languages you know" />
+		<h:selectManyCheckbox id="lang" value="#{helloBean.languages}"
+			required="true" requiredMessage="SELECT ATLEAST ONE LANGUAGE">
+			<f:selectItems value="#{helloBean.languageDisplay}" />
+		</h:selectManyCheckbox>
+		<h:message for="lang" style="color:red" />
+
+		<h:outputText value="Select Your Favourite Coffee" />
+		<h:selectOneMenu id="fav" value="#{helloBean.coffee}">
+			<f:selectItems value="#{helloBean.coffeeDisplay}" />
+		</h:selectOneMenu>
+		<h:message for="fav" />
+
+		<h:outputText value="Select Gender" />
+		<h:selectOneRadio id="gen" value="#{helloBean.gender}"
+			required="true" requiredMessage="SELECT ATLEAST ONE">
+			<f:selectItem itemValue="1" itemLabel="Male" />
+			<f:selectItem itemValue="2" itemLabel="Female" />
+			<f:selectItem itemValue="3" itemLabel="Robot" />
+		</h:selectOneRadio>
+		<h:message for="gen" style="color:red" />
+
+		<h:outputText value="Type your Address" />
+		<h:inputTextarea id="add" value="#{helloBean.address}"
+			required="true" requiredMessage="PLEASE ENTER ADDRESS" />
+		<h:message for="add" style="color:red" />
+		
+		<h:outputText value="Enter your zipcode" />
+		<h:inputText id="zc" value="#{helloBean.zipcode}"
+			validatorMessage="ZIPCODE SHOULD BE 6 DIGITS"
+			converterMessage="PLEASE ENTER INTEGER VALUE">
+			<f:validateLength minimum="6" maximum="6" />
+		</h:inputText>
+		<h:message for="zc" style="color:red" />
+
+		<h:commandButton value="RESET" type="reset" />
+		<h:commandButton value="SIGN UP" action="#{helloBean.display}" />
+
+	</h:panelGrid>
+</h:form>
+</h:body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

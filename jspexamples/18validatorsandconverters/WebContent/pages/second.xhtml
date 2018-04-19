@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head></h:head>
+<h:body style="background-color:wheat">
+	<h1>
+		Following are your Your Details <br />
+
+		<h:panelGrid columns="2">
+			User ID is
+			<h:outputText value="#{helloBean.userId}" />
+		
+			Name is
+			<h:outputText value="#{helloBean.name}" />
+			
+			Email is
+			<h:outputText value="#{helloBean.email}" />
+
+			Phone is
+			<h:outputText value="#{helloBean.phone}" />
+
+			Salary is
+			<h:outputText value="#{helloBean.salary}" />
+			
+			DOB is
+			<h:outputText value="#{helloBean.dob}">
+				<f:convertDateTime type="date" dateStyle="short" />
+			</h:outputText>
+			
+			DOB is
+			<h:outputText value="#{helloBean.dob}">
+				<f:convertDateTime type="date" dateStyle="long" />
+			</h:outputText>
+		
+			DOB is
+			<h:outputText value="#{helloBean.dob}">
+				<f:convertDateTime pattern="dd/MMM/yyyy" />
+			</h:outputText>
+		</h:panelGrid>
+	</h1>
+</h:body>
+</html>
+
+

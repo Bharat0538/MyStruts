@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	
+	<h:head></h:head>
+	<h:body style="background-color:wheat">
+	<h2>Following are your details <br/>
+	<h:panelGrid columns="2">
+		Your user id is : 
+		<h:outputText value="#{helloBean.userId}" />
+		
+		Your name is : 
+		<h:outputText value="#{helloBean.name}" />
+
+		I remember you : 
+		<h:outputText value="#{helloBean.rememberMe}" />
+		
+		Technologies you know : 
+		<h:outputText value="#{helloBean.technologies}" />
+		
+		Languages you know : 
+		<h:outputText value="#{helloBean.languagesInString}" />
+		
+		Your favorite coffee is :
+		<h:outputText value="#{helloBean.coffee}" />
+		
+		Your gender is :
+		<h:outputText value="#{helloBean.gender}" />
+		 
+		Your address is : 
+		<h:outputText value="#{helloBean.address}" />
+		
+	</h:panelGrid>
+	</h2>
+	</h:body>
+</html>
+
+
+

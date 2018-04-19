@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head></h:head>
+<h:body style="background-color:yellow">
+	<h:form>
+		<h1>Please enter the numbers</h1>
+		<h:panelGrid columns="2">
+			<h:outputText value="Enter First Number:" />
+			<h:inputText id="n1" value="#{helloBean.num1}" />
+		
+			<h:outputText value="Enter Second Number:" />
+			<h:inputText id="n2" value="#{helloBean.num2}" />
+		</h:panelGrid>	
+
+		<h:panelGrid columns="4">
+			<h:commandButton value="ADD" action="#{helloBean.addition}"/>
+			<h:commandButton value="MULTIPLY" action="#{helloBean.multiplication}"/>
+			<h:commandButton value="SUBTRACT" action="#{helloBean.substraction}"/>
+			<h:commandButton value="DIVIDE" action="#{helloBean.division}"/>
+		</h:panelGrid>		
+	</h:form>
+</h:body>
+</html>
+
+
+			

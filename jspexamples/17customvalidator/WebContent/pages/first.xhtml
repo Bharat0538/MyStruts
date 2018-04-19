@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head></h:head>
+<h:body style="background-color:yellow">
+<h:form>
+	<h1>Please enter your details</h1>
+	<h:panelGrid columns="3">
+		<h:outputText value="Enter your ID" />
+		<h:inputText id="uid" value="#{helloBean.userId}" required="true"
+			requiredMessage="PLEASE ENTER USERID">
+			<f:validator validatorId="uidValidator" />
+		</h:inputText>
+		<h:message for="uid" style="color:red" />
+
+		<h:outputText value="Enter your name" />
+		<h:inputText id="nme" value="#{helloBean.name}" required="true"
+			requiredMessage="PLEASE ENTER USERNAME" />
+		<h:message for="nme" style="color:red" />
+
+		<h:commandButton value="LOGIN" action="#{helloBean.display}" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
+
+
+
+

@@ -1,0 +1,1 @@
+use google translate to generate UTF code

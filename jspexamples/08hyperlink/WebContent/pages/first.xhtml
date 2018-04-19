@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head></h:head>
+<h:body style="background-color:yellow">
+<h:form>
+<a href="second.xhtml">This is html link</a> <br/>
+
+<h:link value="This is JSF link and directly displays the view" outcome="second"/> <br/>
+
+<h:commandLink action="#{testBean.fun}" value="This is JSF link and invokes backing bean method" /> <br/>
+</h:form>
+</h:body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head></h:head>
+<h:body style="background-color:yellow">
+<h:form>
+	<h1>Please enter your details</h1>
+		<h:panelGrid columns="3" align="left">
+		
+			<h:outputText value="Enter your Id" />
+			<h:inputText id="uid" value="#{helloBean.userId}" converterMessage="Please enter integer value">
+			</h:inputText>
+			<h:message for="uid" style="color:red" />
+
+			<h:outputText value="Enter your name" />
+			<h:inputText id="nme" value="#{helloBean.name}" />
+			<h:message for="nme" style="color:red" />
+
+
+			<h:outputText value="Enter your phone" />
+			<h:inputText id="ph" value="#{helloBean.phoneTO}" converterMessage="Please enter phone number in the following format 91-80-123456">
+				<f:converter converterId="phConverter" />
+			</h:inputText>
+			<h:message for="ph" style="color:red" />
+
+			</h:panelGrid>
+
+			<h:commandButton value="SUBMIT" action="#{helloBean.display}" />
+
+		</h:form>
+	</h:body>
+</html>
